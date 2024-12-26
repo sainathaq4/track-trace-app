@@ -1,0 +1,52 @@
+.shipment-tracker-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  .ant-card-body {
+    padding: 24px;
+  }
+
+  .tracker-header {
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .anticon {
+      color: #ee4d2d;
+      font-size: 14px;
+    }
+
+    .ant-radio-group {
+      .ant-radio-button-wrapper {
+        border-color: #ee4d2d;
+        color: #666;
+
+        &:hover {
+          color: #ee4d2d;
+        }
+
+        &-checked {
+          background: #ee4d2d;
+          border-color: #ee4d2d;
+          color: #fff;
+
+          &::before {
+            background-color: #ee4d2d;
+          }
+
+          &:hover {
+            background: #ff6b4d;
+            border-color: #ff6b4d;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

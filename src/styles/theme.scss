@@ -1,0 +1,101 @@
+// Theme variables
+:root {
+  --primary-color: #ee4d2d;
+  --primary-hover: #ff6b4d;
+  --primary-active: #d43b1d;
+  --primary-light: rgba(238, 77, 45, 0.1);
+  
+  // Text colors
+  --text-color: #1a1a1a;
+  --text-secondary: #666666;
+  
+  // Background colors
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  
+  // Border colors
+  --border-color: #e8e8e8;
+  
+  // Status colors
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  --info-color: #1890ff;
+  
+  // Layout
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+// Menu styles
+.ant-menu {
+  &-item {
+    margin: 4px 0 !important;
+    border-radius: var(--border-radius);
+    
+    &:hover {
+      color: var(--primary-color) !important;
+    }
+
+    &-selected {
+      color: var(--primary-color) !important;
+      background-color: var(--primary-light) !important;
+
+      &::after {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// Button styles
+.ant-btn {
+  border-radius: var(--border-radius);
+  
+  &-primary {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+
+    &:hover {
+      background: var(--primary-hover) !important;
+      border-color: var(--primary-hover) !important;
+    }
+
+    &:active {
+      background: var(--primary-active) !important;
+      border-color: var(--primary-active) !important;
+    }
+  }
+}
+
+// Card styles
+.ant-card {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  
+  .ant-card-head {
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+// Filter buttons
+.filter-button {
+  padding: 6px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  &.active {
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    font-weight: 500;
+    box-shadow: var(--box-shadow);
+  }
+}

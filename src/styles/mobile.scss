@@ -1,0 +1,30 @@
+.mobile-header {
+  padding: 16px 0;
+  margin-bottom: 16px;
+
+  .ant-space-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ant-card {
+  border-radius: 12px;
+  
+  .ant-card-body {
+    padding: 16px;
+  }
+}
+
+.ant-float-button {
+  width: 56px;
+  height: 56px;
+  
+  .ant-float-button-body {
+    background-color: #ee4d2d;
+    
+    &:hover {
+      background-color: #ff6b4d;
+    }
+  }
+}

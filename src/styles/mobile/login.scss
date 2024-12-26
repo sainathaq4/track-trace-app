@@ -1,0 +1,70 @@
+.mobile-login-container {
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-login-content {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.logo-container {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  background: var(--primary-color);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .mobile-login-logo {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.login-titles {
+  margin-bottom: 32px;
+
+  .ant-typography {
+    margin: 0;
+  }
+
+  h3.ant-typography {
+    margin-bottom: 8px;
+  }
+}
+
+.mobile-login-form {
+  .ant-input-affix-wrapper {
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 8px;
+
+    input {
+      font-size: 16px;
+    }
+  }
+
+  .ant-btn {
+    height: 48px;
+    font-size: 16px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    margin-top: 24px;
+  }
+
+  .demo-credentials {
+    display: block;
+    margin-top: 24px;
+    font-size: 13px;
+  }
+}
